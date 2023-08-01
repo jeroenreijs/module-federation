@@ -1,0 +1,20 @@
+{
+  "name": "module-federation",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "main",
+      "pages",
+      "pagebuilder",
+      "common"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run build",
+    "clean": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  }
+}

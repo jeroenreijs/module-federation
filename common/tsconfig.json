@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es5",
+    "resolveJsonModule": true,
+    "lib": ["dom", "dom.iterable", "esnext", "ESNext.AsyncIterable"],
+    "composite": true,
+    "rootDir": "./src",
+    "noImplicitAny": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/**",
+    "**/__mocks__/**",
+    "**/test/**"
+  ],
+  "references": []
+}

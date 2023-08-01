@@ -1,0 +1,25 @@
+{
+  "name": "@ide/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc --watch",
+    "prebuild": "rm -rf dist/* tsconfig.tsbuildinfo",
+    "build": "tsc",
+    "postbuild": "copyfiles -u 1 './src/**/*.{svg,png,jpg,jpeg}' ./dist"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^6.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-react": "^7.13.13",
+    "@types/react": "^17.0.2",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.1.6"
+  }
+}

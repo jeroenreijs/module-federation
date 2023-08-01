@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background: #eee;
+}
+
+.flex {
+  display: flex;
+}
+
+#detail {
+  padding: 2rem;
+}
